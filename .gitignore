@@ -1,1 +1,2 @@
-*.exe
+/Model/../*.obj
+/Model/../*.dae
