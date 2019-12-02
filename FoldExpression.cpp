@@ -1,5 +1,4 @@
 #include <iostream>
-
 template<typename...Ts>
 auto sum(Ts...args)
 {

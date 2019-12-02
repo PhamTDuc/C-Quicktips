@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
 	//std::cout<<ptr1<<std::endl; Can't happened
 
 	func(std::move(ptr1));
-	std::cout<<ptr1.get();
+	std::cout<<ptr1.get(); //Will print 0
 	if(ptr1.get()){
 		std::cout<<"Hello";
 	}
