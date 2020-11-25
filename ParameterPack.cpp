@@ -19,7 +19,7 @@ template<typename ...Ts>
 std::vector<std::string> to_string(const Ts&...args)
 {
 	auto generic_lamdas=[](const auto &p){std::stringstream s;s<<p;return s.str();};
-	return {generic_lamdas(args)...};
+	return {generic_lamdas(args)...}; // Pack Expansion
 }
 
 template<typename ...Ts>
